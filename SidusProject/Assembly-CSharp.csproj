@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{91D3E761-764B-753E-8715-44F8180BD3E1}</ProjectGuid>
+    <ProjectGuid>{C9ECE97A-199D-2A30-BFA0-5FF23763F314}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,9 +53,6 @@
     <UnityVersion>2020.3.29f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\2.Scripts\4.Talk\DialogData.cs" />
     <Compile Include="Assets\2.Scripts\Managers\TimerManager.cs" />
     <Compile Include="Assets\2.Scripts\ButtonScript.cs" />
@@ -67,19 +64,19 @@
     <Compile Include="Assets\2.Scripts\5.Ingame\BlindImage.cs" />
     <Compile Include="Assets\2.Scripts\3.Stage\StageButton.cs" />
     <Compile Include="Assets\2.Scripts\Managers\SaveLoadManager.cs" />
+    <Compile Include="Assets\2.Scripts\4.Talk\AskButton.cs" />
     <Compile Include="Assets\2.Scripts\Locked.cs" />
     <Compile Include="Assets\2.Scripts\CSVReader.cs" />
     <Compile Include="Assets\2.Scripts\Stars\StarBoard.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\TalkSceneManager.cs" />
     <Compile Include="Assets\2.Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\2.Scripts\Stars\ShootingStar.cs" />
+    <Compile Include="Assets\2.Scripts\4.Talk\SkipAllButton.cs" />
     <Compile Include="Assets\2.Scripts\Fixed.cs" />
     <Compile Include="Assets\2.Scripts\Stars\StarBlock.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
-    <Compile Include="Assets\2.Scripts\4.Talk\AskButton.cs" />
-    <Compile Include="Assets\2.Scripts\4.Talk\SkipAllButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\0.Plugins\Newtonsoft.Json.dll" />

@@ -26,7 +26,7 @@ public class TimerManager : MonoBehaviour
     private void Start()
     {
         EndTimer = false;
-        CurrentTime = 10f;
+        CurrentTime = 30f;
     }
 
     private void Update()
