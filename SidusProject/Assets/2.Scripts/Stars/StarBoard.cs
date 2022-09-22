@@ -42,28 +42,21 @@ public class StarBoard : MonoBehaviour
 
     private float CurrentTime = 0f;
 
-    [HideInInspector]
-    public int DontMoveStarBlockNum;        // 움직이지 않는 별블럭 제한 변수
-    [HideInInspector]
-    public int CancerStarBlockNum;          // 가지가 하나인 별블럭 제한 변수
-    [HideInInspector]
-    public int DoubleBombStarBlockNum;      // 두번 터지는 별블럭 제한 변수
+    [HideInInspector] public int DontMoveStarBlockNum;        // 움직이지 않는 별블럭 제한 변수
+    [HideInInspector] public int CancerStarBlockNum;          // 가지가 하나인 별블럭 제한 변수
+    [HideInInspector] public int DoubleBombStarBlockNum;      // 두번 터지는 별블럭 제한 변수
 
     private int DestoryStarBlockTilesTime;  // 다음 블록 사라지게 하는 시간
     private int DestoryStarBlockTilesNum;   // 사라진 블럭 개수
 
     private void Start()
     {
-        if(GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Taurus))        // 황소자리 랜덤 블럭 없어짐
-            for(int i = 0; i < 4; i++)
+        if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Taurus))        // 황소자리 랜덤 블럭 없어짐
+            for (int i = 0; i < 4; i++)
             {
                 int randomNum = Random.Range(0, starBlcokArray.Length);
                 starBlcokArray = starBlcokArray.Where((source, index) => index != randomNum).ToArray();
             }
-
-        //if (GameManager.Instance.Currentstage.Equals(GameManager.StageType.Gemini))       // 쌍둥이자리 위쪽 운석 떨어지지 않음
-        //    for (int i = 0; i < 5; i++)
-        //        ShootingStarTiles = ShootingStarTiles.Where((source, index) => index != 0).ToArray();
 
         if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Pisces))      // 물고기자리 블록 사라지게 하는 시간 설정
             DestoryStarBlockTilesTime = Random.Range(1, 6);
@@ -92,17 +85,11 @@ public class StarBoard : MonoBehaviour
                 break;
 
             case GameManager.ChapterType.Leo:            // 사자자리 별똥별 별블록타일에도 떨어지게 설정
-                //CurrentTime += Time.deltaTime;
-                //if(CurrentTime > 20)
-                //{
-                //    ShootingShootingStar(true);
-                //    CurrentTime = 0;
-                //}
                 break;
 
             case GameManager.ChapterType.Libra:          // 천칭자리 별블럭 보이지 않게 하기
                 CurrentTime += Time.deltaTime;
-                if(CurrentTime > 5)
+                if (CurrentTime > 5)
                 {
                     Instantiate(Resources.Load("Prefabs/BlindImage"), GameObject.Find("CanvasCenter").transform);
                     CurrentTime = 0;
@@ -111,9 +98,9 @@ public class StarBoard : MonoBehaviour
 
             case GameManager.ChapterType.Pisces:         // 물고기 자리 블럭 사라지게 하기
                 CurrentTime += Time.deltaTime;
-                if(CurrentTime > DestoryStarBlockTilesTime)
+                if (CurrentTime > DestoryStarBlockTilesTime)
                 {
-                    if(DestoryStarBlockTilesNum < 5)
+                    if (DestoryStarBlockTilesNum < 5)
                         StartCoroutine(DestroyStarBlockTiles());
 
                     CurrentTime = 0;
@@ -140,35 +127,35 @@ public class StarBoard : MonoBehaviour
         }
         else if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Scorpio))        // 전갈자리 움직이지 않는 블럭
         {
-            if(Random.value < 0.9f)
-                RandomStarBlockStandard(transform, ArrayNum);       
+            if (Random.value < 0.9f)
+                RandomStarBlockStandard(transform, ArrayNum);
             else
             {
-                if(DontMoveStarBlockNum < 6)
+                if (DontMoveStarBlockNum < 6)
                 {
                     RandomStarBlockDontMove(transform, ArrayNum);
                     DontMoveStarBlockNum++;
                 }
                 else
-                    RandomStarBlockStandard(transform, ArrayNum);       
+                    RandomStarBlockStandard(transform, ArrayNum);
             }
         }
         else if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Sagittarius))    // 궁수자리 가지가 하나인 블럭
         {
-            if(Random.value < 0.9f)
-                RandomStarBlockStandard(transform, ArrayNum);       
+            if (Random.value < 0.9f)
+                RandomStarBlockStandard(transform, ArrayNum);
             else
             {
-                if(CancerStarBlockNum < 6)
+                if (CancerStarBlockNum < 6)
                 {
                     InstantiateStarBlock("Prefabs/StarBlocks/StarBlock_Cancer_Branch1", transform, ArrayNum);
                     CancerStarBlockNum++;
                 }
                 else
-                    RandomStarBlockStandard(transform, ArrayNum);       
+                    RandomStarBlockStandard(transform, ArrayNum);
             }
         }
-        else if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Aquarius))       // 물병자리 2번 부셔야 부서지는 블럭ㄴ
+        else if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Aquarius))       // 물병자리 2번 부셔야 부서지는 블럭
         {
             if (Random.value < 0.9f)
                 RandomStarBlockStandard(transform, ArrayNum);
@@ -187,7 +174,7 @@ public class StarBoard : MonoBehaviour
             RandomStarBlockStandard(transform, ArrayNum);       // 별블럭 기본을 랜덤하게 생성하기
     }
 
-    private  void RandomStarBlockStandard(Transform transform, int ArrayNum)
+    private void RandomStarBlockStandard(Transform transform, int ArrayNum)
     {
         int randomNum = Random.Range(1, 4);
 
@@ -259,26 +246,11 @@ public class StarBoard : MonoBehaviour
         }
     }
 
-    public  void InstantiateStarBlock(string StarBlockPrefabName, Transform transform, int ArrayNum)
+    public void InstantiateStarBlock(string StarBlockPrefabName, Transform transform, int ArrayNum)
     {
         starBlcokArray[ArrayNum].starBlock = (Instantiate(Resources.Load(StarBlockPrefabName), transform.position, Quaternion.identity) as GameObject).GetComponent<StarBlock>();
         starBlcokArray[ArrayNum].starBlock.MyPosition = ArrayNum;
     }
-
-    //private void ShootingShootingStar(int ShootingPlace)
-    //{
-    //    int randomPlace;
-    //    if (AtStarBlockPlace)
-    //    {
-    //        randomPlace = Random.Range(0, StarBlcokArray.Length);
-    //        Instantiate(Resources.Load("StarBlocks/ShootingStarBlock"), StarBlcokArray[randomPlace].ArrayPosition.position, Quaternion.identity);
-    //    }
-    //    else
-    //    {
-    //        randomPlace = Random.Range(0, ShootingStarTiles.Length);
-    //        Instantiate(Resources.Load("StarBlocks/ShootingStarBlock"), ShootingStarTiles[randomPlace].transform.position, Quaternion.identity);
-    //    }
-    //}
 
     private IEnumerator DestroyStarBlockTiles()
     {
@@ -298,7 +270,7 @@ public class StarBoard : MonoBehaviour
 
     public void _ShootingClick(int Index)
     {
-        if(Shottime > 0)
+        if (Shottime > 0)
         {
             if (shootingStarArray[Index].IsClicked)
             {

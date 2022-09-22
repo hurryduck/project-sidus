@@ -859,18 +859,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 468601883}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -879,6 +867,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Leo
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 468601883}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &468601885
@@ -1004,18 +1004,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 496295381}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -1024,6 +1012,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Aries
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 496295381}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &496295379
@@ -1174,7 +1174,6 @@ GameObject:
   - component: {fileID: 619123118}
   - component: {fileID: 619123117}
   - component: {fileID: 619123116}
-  - component: {fileID: 619123119}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -1244,19 +1243,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619123117}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 619123119}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _LoadSceneName
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 3.Chapter01_Stages
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &619123117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1295,20 +1282,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619123114}
   m_CullTransparentMesh: 1
---- !u!114 &619123119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 619123114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b39d17773985ac4bba27473da8b3f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SetActiveTrueObjs: []
-  SetActiveFalseObjs: []
 --- !u!1 &705548886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,18 +1413,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 705548889}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -1460,6 +1421,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Pisces
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 705548889}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &705548891
@@ -2008,18 +1981,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1036969108}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -2028,6 +1989,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Aquarius
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1036969108}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1036969110
@@ -2139,18 +2112,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1135525862}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -2159,6 +2120,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Cancer
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1135525862}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1135525864
@@ -2300,18 +2273,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1143142183}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -2320,6 +2281,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Gemini
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1143142183}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1143142185
@@ -2582,18 +2555,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1287185435}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -2602,6 +2563,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Sagittarius
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1287185435}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1287185437
@@ -3247,18 +3220,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1542128277}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -3267,6 +3228,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Libra
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1542128277}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1542128279
@@ -3783,18 +3756,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1754270724}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -3803,6 +3764,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Capricorn
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1754270724}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1754270726
@@ -4318,18 +4291,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1936009101}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -4338,6 +4299,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Taurus
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1936009101}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1936009103
@@ -4509,18 +4482,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1936156482}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -4529,6 +4490,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Scorpio
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1936156482}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1936156484
@@ -4761,18 +4734,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1983587019}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -4781,6 +4742,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Virgo
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1983587019}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1983587021
@@ -4892,18 +4865,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1989201036}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: _SetActiveTrue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 468601883}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: _SetCurrentChapter
         m_Mode: 5
         m_Arguments:
@@ -4912,6 +4873,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Virgo
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1989201036}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: _SetActiveTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1989201038
