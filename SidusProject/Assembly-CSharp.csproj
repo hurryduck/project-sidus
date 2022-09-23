@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.29f1</UnityVersion>
@@ -61,22 +61,24 @@
     <Compile Include="Assets\2.Scripts\ButtonScript.cs" />
     <Compile Include="Assets\2.Scripts\Managers\InGameManager.cs" />
     <Compile Include="Assets\2.Scripts\Managers\DataTalbeManager.cs" />
-    <Compile Include="Assets\2.Scripts\Stars\StarCheckBox.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\StarCheckBox.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\Block.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ScoreManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\BombBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BlindImage.cs" />
     <Compile Include="Assets\2.Scripts\3.Stage\StageButton.cs" />
     <Compile Include="Assets\2.Scripts\Managers\SaveLoadManager.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\AskButton.cs" />
     <Compile Include="Assets\2.Scripts\Locked.cs" />
     <Compile Include="Assets\2.Scripts\CSVReader.cs" />
-    <Compile Include="Assets\2.Scripts\Stars\StarBoard.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\StarBoard.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\TalkSceneManager.cs" />
     <Compile Include="Assets\2.Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\2.Scripts\Stars\ShootingStar.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\SkipAllButton.cs" />
     <Compile Include="Assets\2.Scripts\Fixed.cs" />
-    <Compile Include="Assets\2.Scripts\Stars\StarBlock.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\StarBlock.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\DragnDropBomb.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
