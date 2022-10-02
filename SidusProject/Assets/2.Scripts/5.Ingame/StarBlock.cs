@@ -34,7 +34,8 @@ public class StarBlock : Block
     {
         if (starState.Equals(StarState.Bomb) && !IsBomb)
         {
-            if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Aquarius && Type == Types.DoubleBomb)
+            // 두번 터짐 처리
+            if (Type == Types.DoubleBomb)
             {
                 if (IsBombOnce)
                 {
@@ -45,7 +46,7 @@ public class StarBlock : Block
                     for (int i = 0; i < transform.childCount; i++)
                         transform.GetChild(i).tag = "Untagged";
                     starState = StarState.Waiting;
-                    //gameObject.GetComponent<SpriteRenderer>().sprite = BombedStarBlockSprite; // 두번 터지는 경우 스프라이트 변경
+                    GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("S_StarBlock_Branch" + (int)Shape + 1);
                     IsBombOnce = true;
                 }
             }
@@ -60,8 +61,10 @@ public class StarBlock : Block
     {
         if (!InGameManager.Instance.IsPaused && starState.Equals(StarState.Waiting))
         {
+            // 움직이지 않는 블럭 처리
             if (!Type.Equals(Types.DontMove))
             {
+                // 더블클릭 처리
                 if (Type.Equals(Types.DoubleClick))
                 {
                     if (IsClicked)
@@ -112,10 +115,7 @@ public class StarBlock : Block
 
         Blink();
 
-        if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Scorpio) && Type == Types.DontMove)
-            StarBoard.Instance.DontMoveStarBlockNum--;
-
-        if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Aquarius) && Type == Types.DoubleBomb)
+        if (Type == Types.DoubleBomb)
             StarBoard.Instance.DoubleBombStarBlockNum--;
 
         StartCoroutine(StarBoard.Instance.PlaceStarBlcok(transform, MyPosition, 0.5f));

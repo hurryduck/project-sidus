@@ -648,7 +648,7 @@ MonoBehaviour:
     ClearStageNum: 
     TalkOnce: 
     AfterTalckOnce: 000000000000000000000000
-  CurrentChapter: 0
+  CurrentChapter: 2
   CurrentStage: 0
 --- !u!4 &460739946
 Transform:

@@ -37,8 +37,6 @@ public class StarBoard : MonoBehaviour
 
     private float CurrentTime = 0f;
 
-    [HideInInspector] public int DontMoveStarBlockNum;        // 움직이지 않는 별블럭 제한 변수
-    [HideInInspector] public int CancerStarBlockNum;          // 가지가 하나인 별블럭 제한 변수
     [HideInInspector] public int DoubleBombStarBlockNum;      // 두번 터지는 별블럭 제한 변수
 
     private int DestoryStarBlockTilesTime;  // 다음 블록 사라지게 하는 시간
@@ -54,8 +52,8 @@ public class StarBoard : MonoBehaviour
                 StarTiles = StarTiles.Where((source, index) => index != randomNum).ToArray();
             }
 
-        // 물고기자리 블럭 사라지게 하는 시간 설정
-        if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Pisces))
+        // 게자리 블럭 사라지게 하는 시간 설정
+        if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Cancer))
             DestoryStarBlockTilesTime = Random.Range(1, 6);
 
         // 별블럭 배치
@@ -64,24 +62,19 @@ public class StarBoard : MonoBehaviour
 
         for (int i = 0; i < 4; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 2);    // Top
         for (int i = 4; i < 8; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 3);    // Right
-        for (int i = 8; i < 12; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 0);   // Bottom
-        for (int i = 12; i < 16; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 1);  // Left
+        if(GameManager.Instance.CurrentChapter != GameManager.ChapterType.Gemini)
+        {
+            for (int i = 8; i < 12; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 0);   // Bottom
+            for (int i = 12; i < 16; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 1);  // Left
+        }
     }
 
     private void Update()
     {
         switch (GameManager.Instance.CurrentChapter)
         {
-            case GameManager.ChapterType.Libra:          // 천칭자리 별블럭 보이지 않게 하기
-                CurrentTime += Time.deltaTime;
-                if (CurrentTime > 5)
-                {
-                    Instantiate(Resources.Load("Prefabs/BlindImage"), GameObject.Find("CanvasCenter").transform);
-                    CurrentTime = 0;
-                }
-                break;
-
-            case GameManager.ChapterType.Pisces:         // 물고기 자리 블럭 사라지게 하기
+            // 게자리 블럭 사라지게 하기
+            case GameManager.ChapterType.Cancer:       
                 CurrentTime += Time.deltaTime;
                 if (CurrentTime > DestoryStarBlockTilesTime)
                 {
@@ -116,38 +109,19 @@ public class StarBoard : MonoBehaviour
                     Star_DoubleClick(transform, ArrayNum);
                 break;
 
-            // 전갈자리 움지이지 않는 블럭
-            case GameManager.ChapterType.Scorpio:
+            // 사자자리 두번 터지는 블럭
+            case GameManager.ChapterType.Leo:
                 if (Random.value < 0.9f)
                     Star_Standard(transform, ArrayNum);
                 else
                 {
-                    if (DontMoveStarBlockNum < 6)
+                    if (DoubleBombStarBlockNum < 6)
                     {
-                        Star_DontMove(transform, ArrayNum);
-                        DontMoveStarBlockNum++;
+                        Star_DoubleBomb(transform, ArrayNum);
+                        DoubleBombStarBlockNum++;
                     }
                     else
                         Star_Standard(transform, ArrayNum);
-                }
-                break;
-
-            // 물병자리 두번 터지는 블럭
-            case GameManager.ChapterType.Aquarius:
-                if (GameManager.Instance.CurrentChapter.Equals(GameManager.ChapterType.Aquarius))
-                {
-                    if (Random.value < 0.9f)
-                        Star_Standard(transform, ArrayNum);
-                    else
-                    {
-                        if (DoubleBombStarBlockNum < 6)
-                        {
-                            Star_DoubleBomb(transform, ArrayNum);
-                            DoubleBombStarBlockNum++;
-                        }
-                        else
-                            Star_Standard(transform, ArrayNum);
-                    }
                 }
                 break;
 
@@ -213,6 +187,7 @@ public class StarBoard : MonoBehaviour
             Quaternion.identity).GetComponent<BombBlock>();
 
         BombTiles[arrayNum].bombBlock = bombBlock;
+        bombBlock.MyPosition = arrayNum;
         bombBlock.HaveToTrue = haveToTrue;
     }
 
@@ -226,6 +201,7 @@ public class StarBoard : MonoBehaviour
             Quaternion.identity).GetComponent<BombBlock>();
 
         BombTiles[arrayNum].bombBlock = bombBlock;
+        bombBlock.MyPosition = arrayNum;
         bombBlock.HaveToTrue = haveToTrue;
     }
 }
