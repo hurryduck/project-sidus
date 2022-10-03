@@ -84,7 +84,9 @@
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Spine\version.txt" />
     <None Include="Assets\0.Plugins\Newtonsoft.Json.dll" />
+    <None Include="Assets\2.Scripts\SpineFiles\ppap.atlas.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -749,6 +751,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="spine-unity.csproj">
+      <Project>{6FE2A0A0-2C1E-C539-F67B-077D4D2C71A4}</Project>
+      <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="spine-unity-editor.csproj">
+      <Project>{0F047BB1-CC42-0EDF-3F9F-5A04F183DC16}</Project>
+      <Name>spine-unity-editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
