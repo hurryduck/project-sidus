@@ -5,8 +5,9 @@ using System.Linq;
 
 public class StarBlock : Block
 {
-    private enum Types { Standard, DontMove, DoubleClick, DoubleBomb }
+    public enum Types { Standard, DontMove, DoubleClick, DoubleBomb }
     [SerializeField] private Types Type;
+    public Types GetTypes { get { return Type; } }
     public enum StarState { Waiting, Moving, Bomb }
     [HideInInspector] public StarState starState;
 
@@ -16,7 +17,6 @@ public class StarBlock : Block
     private float rotAngle;
 
     private bool IsClicked = false;
-    private bool IsBombOnce = false;
 
     protected override void Awake()
     {
@@ -32,23 +32,18 @@ public class StarBlock : Block
 
     private void Update()
     {
-        if (starState.Equals(StarState.Bomb) && !IsBomb)
+        if (starState == StarState.Bomb && !IsBomb)
         {
             // 두번 터짐 처리
             if (Type == Types.DoubleBomb)
             {
-                if (IsBombOnce)
-                {
-                    StartCoroutine(BomebStarBlock());
-                }
-                else
-                {
-                    for (int i = 0; i < transform.childCount; i++)
-                        transform.GetChild(i).tag = "Untagged";
-                    starState = StarState.Waiting;
-                    GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("S_StarBlock_Branch" + (int)Shape + 1);
-                    IsBombOnce = true;
-                }
+                Blink();
+                StarBoard.Instance.DoubleBombStarBlockNum--;
+                Type = Types.Standard;
+                starState = StarState.Waiting;
+                for (int i = 0; i < transform.childCount; i++)
+                    transform.GetChild(i).tag = "Untagged";
+                GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch" + ((int)Shape + 1).ToString());
             }
             else
             {
@@ -69,9 +64,12 @@ public class StarBlock : Block
                 {
                     if (IsClicked)
                     {
+                        GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_DC_1_Branch" + ((int)Shape + 1).ToString());
                         starState = StarState.Moving;
                         StartCoroutine(RotationStarBlock());
                     }
+                    else
+                        GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_DC_2_Branch" + ((int)Shape + 1).ToString());
                     IsClicked = !IsClicked;
                 }
                 else
@@ -115,9 +113,6 @@ public class StarBlock : Block
 
         Blink();
 
-        if (Type == Types.DoubleBomb)
-            StarBoard.Instance.DoubleBombStarBlockNum--;
-
         StartCoroutine(StarBoard.Instance.PlaceStarBlcok(transform, MyPosition, 0.5f));
 
         yield return new WaitForSeconds(0.5f);
@@ -134,7 +129,12 @@ public class StarBlock : Block
                 RaycastHit2D[] Hits = Physics2D.RaycastAll(transform.position, TRBLVector[i], 0.5f, LayerMask.GetMask("StarBlockCheckBox"));
                 foreach (RaycastHit2D Hit in Hits)
                     if (Hit.collider != null)
-                        Hit.transform.tag = "Link";
+                    {
+                        if(Type == Types.DoubleBomb)
+                            Hit.transform.tag = "FakeLink";
+                        else
+                            Hit.transform.tag = "Link";
+                    }
             }
         }
     }

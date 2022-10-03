@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2396d27020fce4182ce61527733a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shape: 2
+  Shape: 0
   BlockState: 0
   MyPosition: 0
   HaveToTrue: 0
