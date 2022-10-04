@@ -62,7 +62,7 @@ public class StarBoard : MonoBehaviour
 
         for (int i = 0; i < 4; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 2);    // Top
         for (int i = 4; i < 8; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 3);    // Right
-        if(GameManager.Instance.CurrentChapter != GameManager.ChapterType.Gemini)
+        if(GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
         {
             for (int i = 8; i < 12; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 0);   // Bottom
             for (int i = 12; i < 16; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 1);  // Left
@@ -111,7 +111,7 @@ public class StarBoard : MonoBehaviour
 
             // 사자자리 두번 터지는 블럭
             case GameManager.ChapterType.Leo:
-                if (Random.value < 0.9f)
+                if (Random.value < 0.8f)
                     Star_Standard(transform, ArrayNum);
                 else
                 {

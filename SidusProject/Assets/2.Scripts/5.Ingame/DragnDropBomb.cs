@@ -23,7 +23,7 @@ public class DragnDropBomb : MonoBehaviour
     private int ArrayNum = -1;
     private int RandomNum;
 
-    private enum Shapes { Branch3, Branch2, Branch1 }
+    private enum Shapes { Branch1, Branch2, Branch3 }
     private Shapes Shape;
     public bool[] Branchs = new bool[4];
 
@@ -75,9 +75,9 @@ public class DragnDropBomb : MonoBehaviour
         // 쌍둥이자리일 경우 배치 되는 곳이 한정되어 있음
         int Range;
         if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
-            Range = 8;
-        else
             Range = 16;
+        else
+            Range = 8;
 
         // 만약 같은 폭탄틀을 가지고 올 경우 폭탄틀이 폭파 하면 맞는 폭탄틀이 없어지는 것을 방지하기 위해 아래 과정을 진행한다.
         if (ArrayNum != -1)

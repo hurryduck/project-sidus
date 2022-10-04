@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    protected enum Shapes { Branch3, Branch2, Branch1 }
+    protected enum Shapes { Branch1, Branch2, Branch3 }
     [SerializeField] protected Shapes Shape;
 
     // 가지 위치 선정
