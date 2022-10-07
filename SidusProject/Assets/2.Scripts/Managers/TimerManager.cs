@@ -16,17 +16,16 @@ public class TimerManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    private Text TimerText;
+    [SerializeField] private Slider Timer;
 
-    private float CurrentTime;
-    [HideInInspector]
-    public bool EndTimer;
+    [HideInInspector] public float CurrentTime;
+    private readonly float MaxTime = 180;
+    [HideInInspector] public bool EndTimer;
 
     private void Start()
     {
         EndTimer = false;
-        CurrentTime = 180f;
+        CurrentTime = MaxTime;
     }
 
     private void Update()
@@ -35,10 +34,8 @@ public class TimerManager : MonoBehaviour
         {
             if (CurrentTime > 0)
             {
-                if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Capricorn)
-                    CurrentTime -= Time.deltaTime * 1.5f;
-                else
-                    CurrentTime -= Time.deltaTime;
+                CurrentTime -= Time.deltaTime;
+                Timer.value = CurrentTime / MaxTime;
             }
             else
             {
@@ -47,7 +44,6 @@ public class TimerManager : MonoBehaviour
                 InGameManager.Instance.EndGame();
             }
 
-            TimerText.text = string.Format("{0:00} : {1:00}", (int)(CurrentTime / 60), (int)(CurrentTime % 60));
         }
     }
 }

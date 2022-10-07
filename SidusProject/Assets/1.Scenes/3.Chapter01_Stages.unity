@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 256176}
   - component: {fileID: 256177}
   m_Layer: 5
-  m_Name: Game_Chapter_01_3
+  m_Name: Stage_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,6 +301,7 @@ MonoBehaviour:
   MyValue: 3
   ParentButton: {fileID: 256174}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &119993684
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ GameObject:
   - component: {fileID: 119993690}
   - component: {fileID: 119993691}
   m_Layer: 5
-  m_Name: Game_Chapter_01_4
+  m_Name: Stage_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,6 +480,7 @@ MonoBehaviour:
   MyValue: 4
   ParentButton: {fileID: 119993688}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &178501899
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,7 +496,7 @@ GameObject:
   - component: {fileID: 178501901}
   - component: {fileID: 178501905}
   m_Layer: 5
-  m_Name: Game_Chapter_01_1
+  m_Name: Stage_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,7 +659,7 @@ GameObject:
   - component: {fileID: 468186935}
   - component: {fileID: 468186936}
   m_Layer: 5
-  m_Name: Game_Chapter_01_5
+  m_Name: Stage_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -819,6 +821,7 @@ MonoBehaviour:
   MyValue: 5
   ParentButton: {fileID: 468186933}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &777976310
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +902,7 @@ GameObject:
   - component: {fileID: 803585708}
   - component: {fileID: 803585709}
   m_Layer: 5
-  m_Name: Game_Chapter_01_2
+  m_Name: Stage_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,6 +1064,7 @@ MonoBehaviour:
   MyValue: 2
   ParentButton: {fileID: 803585706}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &987722679
 GameObject:
   m_ObjectHideFlags: 0

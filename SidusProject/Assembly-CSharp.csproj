@@ -82,11 +82,11 @@
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
+    <Compile Include="Assets\2.Scripts\Managers\StartManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />
     <None Include="Assets\0.Plugins\Newtonsoft.Json.dll" />
-    <None Include="Assets\2.Scripts\SpineFiles\ppap.atlas.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

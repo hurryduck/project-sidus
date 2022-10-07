@@ -15,9 +15,8 @@ public class ScoreManager : MonoBehaviour
             return instance;
         }
     }
-    
-    [SerializeField]
-    private Image GaugeBarImage;
+
+    [SerializeField] private Image GaugeBarImage;
     private float CurrentFill;
     private float MaxValue;
     private float currnetValue;

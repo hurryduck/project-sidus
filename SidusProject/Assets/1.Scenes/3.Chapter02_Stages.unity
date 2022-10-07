@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 256176}
   - component: {fileID: 256177}
   m_Layer: 5
-  m_Name: Game_Chapter_01_3
+  m_Name: Stage_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,6 +301,7 @@ MonoBehaviour:
   MyValue: 3
   ParentButton: {fileID: 256174}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &119993684
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ GameObject:
   - component: {fileID: 119993690}
   - component: {fileID: 119993691}
   m_Layer: 5
-  m_Name: Game_Chapter_01_4
+  m_Name: Stage_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,6 +480,7 @@ MonoBehaviour:
   MyValue: 4
   ParentButton: {fileID: 119993688}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &173862530
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,7 +497,7 @@ GameObject:
   - component: {fileID: 173862533}
   - component: {fileID: 173862532}
   m_Layer: 5
-  m_Name: Game_Chapter_01_10
+  m_Name: Stage_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,6 +537,7 @@ MonoBehaviour:
   MyValue: 10
   ParentButton: {fileID: 173862536}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!114 &173862533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,7 +675,7 @@ GameObject:
   - component: {fileID: 178501901}
   - component: {fileID: 178501905}
   m_Layer: 5
-  m_Name: Game_Chapter_01_1
+  m_Name: Stage_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +838,7 @@ GameObject:
   - component: {fileID: 468186935}
   - component: {fileID: 468186936}
   m_Layer: 5
-  m_Name: Game_Chapter_01_5
+  m_Name: Stage_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -997,6 +1000,7 @@ MonoBehaviour:
   MyValue: 5
   ParentButton: {fileID: 468186933}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &516310482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1017,7 @@ GameObject:
   - component: {fileID: 516310485}
   - component: {fileID: 516310484}
   m_Layer: 5
-  m_Name: Game_Chapter_01_7
+  m_Name: Stage_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,6 +1057,7 @@ MonoBehaviour:
   MyValue: 7
   ParentButton: {fileID: 516310488}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!114 &516310485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,7 +1196,7 @@ GameObject:
   - component: {fileID: 766710283}
   - component: {fileID: 766710282}
   m_Layer: 5
-  m_Name: Game_Chapter_01_8
+  m_Name: Stage_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1231,6 +1236,7 @@ MonoBehaviour:
   MyValue: 8
   ParentButton: {fileID: 766710286}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!114 &766710283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1433,7 +1439,7 @@ GameObject:
   - component: {fileID: 803585708}
   - component: {fileID: 803585709}
   m_Layer: 5
-  m_Name: Game_Chapter_01_2
+  m_Name: Stage_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,6 +1601,7 @@ MonoBehaviour:
   MyValue: 2
   ParentButton: {fileID: 803585706}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!1 &987722679
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2025,7 @@ GameObject:
   - component: {fileID: 1572053925}
   - component: {fileID: 1572053924}
   m_Layer: 5
-  m_Name: Game_Chapter_01_6
+  m_Name: Stage_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2058,6 +2065,7 @@ MonoBehaviour:
   MyValue: 6
   ParentButton: {fileID: 1572053928}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!114 &1572053925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,7 +2204,7 @@ GameObject:
   - component: {fileID: 1655027660}
   - component: {fileID: 1655027659}
   m_Layer: 5
-  m_Name: Game_Chapter_01_9
+  m_Name: Stage_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2236,6 +2244,7 @@ MonoBehaviour:
   MyValue: 9
   ParentButton: {fileID: 1655027663}
   compareTarget: 1
+  WarningPanel: {fileID: 0}
 --- !u!114 &1655027660
 MonoBehaviour:
   m_ObjectHideFlags: 0
