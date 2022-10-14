@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2.Scripts\Managers\StartManager.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogData.cs" />
     <Compile Include="Assets\2.Scripts\Managers\TimerManager.cs" />
     <Compile Include="Assets\2.Scripts\ButtonScript.cs" />
@@ -82,7 +83,7 @@
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
-    <Compile Include="Assets\2.Scripts\Managers\StartManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\ResultPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />

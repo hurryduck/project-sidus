@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class InGameManager : MonoBehaviour
 {
@@ -17,26 +16,22 @@ public class InGameManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private GameObject ResultMenuUI;
-    [SerializeField] private Text ResultText;
-    [SerializeField] private GameObject RestartButton;
+    [SerializeField] private ResultPanel ResultMenuUI;
     [SerializeField] private Button ExitButton;
 
     [HideInInspector] public bool IsPaused = false;
 
     public void EndGame(bool IsClear = false)
     {
-        ResultMenuUI.SetActive(true);
+        ResultMenuUI.SetPanel(IsClear);
         TimerManager.Instance.EndTimer = true;
 
         if (IsClear)
         {
-            RestartButton.SetActive(false);
             // 클리어한 스테이지 보다 현재 스테이지가 높을 경우
             if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] < GameManager.Instance.CurrentStage)
                 GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] = GameManager.Instance.CurrentStage;
             ExitButtonOnClick();
-            ResultText.text = "YOU WIN!!!";
         }
     }
 
@@ -76,23 +71,6 @@ public class InGameManager : MonoBehaviour
             case GameManager.ChapterType.Virgo:
                 break;
 
-            case GameManager.ChapterType.Libra:
-                break;
-
-            case GameManager.ChapterType.Scorpio:
-                break;
-
-            case GameManager.ChapterType.Sagittarius:
-                break;
-
-            case GameManager.ChapterType.Capricorn:
-                break;
-
-            case GameManager.ChapterType.Aquarius:
-                break;
-
-            case GameManager.ChapterType.Pisces:
-                break;
         }
 
         GameManager.Instance.SaveData();
