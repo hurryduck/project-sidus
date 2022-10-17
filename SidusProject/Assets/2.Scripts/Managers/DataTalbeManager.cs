@@ -54,8 +54,7 @@ public class DataTalbeManager : MonoBehaviour
             ReadyPanel_Data newData = new ReadyPanel_Data();
             newData.ChapterTitle = LoadData[i]["ChapterTitle"].ToString();
             newData.CharacterImage = LoadData[i]["CharacterImage"].ToString();
-            newData.LimitTime = int.Parse(LoadData[i]["LimitTime"].ToString());
-            newData.GoalScore = int.Parse(LoadData[i]["GoalScore"].ToString());
+            newData.PlaneName = LoadData[i]["PlaneName"].ToString();
 
             ReadyPanel_Datas[i] = newData;
         }

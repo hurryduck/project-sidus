@@ -34,7 +34,7 @@ public class DragnDropBomb : MonoBehaviour
         {
             #region »ý·«
             case Shapes.Branch1:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch1");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch1");
                 Branchs[0] = true;   // Top
                 Branchs[1] = false;  // Right
                 Branchs[2] = true;   // Bottom
@@ -42,7 +42,7 @@ public class DragnDropBomb : MonoBehaviour
                 break;
 
             case Shapes.Branch2:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch2");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch2");
                 Branchs[0] = true;
                 Branchs[1] = true;
                 Branchs[2] = false;
@@ -50,7 +50,7 @@ public class DragnDropBomb : MonoBehaviour
                 break;
 
             case Shapes.Branch3:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch3");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch3");
                 Branchs[0] = true;
                 Branchs[1] = true;
                 Branchs[2] = false;
@@ -133,24 +133,13 @@ public class DragnDropBomb : MonoBehaviour
         if (collision != null)
         {
             BombBlock bombBlock = collision.transform.GetComponent<BombBlock>();
-            if (Shape == Shapes.Branch1)
+            if (bombBlock.GetBranchs[0] == Branchs[0]
+                && bombBlock.GetBranchs[1] == Branchs[1]
+                && bombBlock.GetBranchs[2] == Branchs[2]
+                && bombBlock.GetBranchs[3] == Branchs[3])
             {
-                if (bombBlock.GetBranchs[0] == Branchs[0] 
-                    && bombBlock.GetBranchs[1] == Branchs[1]
-                    && bombBlock.GetBranchs[2] == Branchs[2]
-                    && bombBlock.GetBranchs[3] == Branchs[3])
-                {
-                    bombBlock.Bomb();
-                    SetBomb();
-                }
-            }
-            else
-            {
-                if (bombBlock.RandomNum == RandomNum)
-                {
-                    bombBlock.Bomb();
-                    SetBomb();
-                }
+                bombBlock.Bomb();
+                SetBomb();
             }
         }
 

@@ -16,7 +16,7 @@ public class TimerManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private Slider Timer;
+    [SerializeField] private Image Timer;
 
     [HideInInspector] public float CurrentTime;
     private readonly float MaxTime = 180;
@@ -35,7 +35,7 @@ public class TimerManager : MonoBehaviour
             if (CurrentTime > 0)
             {
                 CurrentTime -= Time.deltaTime;
-                Timer.value = CurrentTime / MaxTime;
+                Timer.fillAmount = CurrentTime / MaxTime;
             }
             else
             {

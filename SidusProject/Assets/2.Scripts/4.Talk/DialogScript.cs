@@ -108,11 +108,11 @@ public class DialogScript : MonoBehaviour
         {
             #region
             case "쿠말":
-                Actor.sprite = Resources.Load<Sprite>("Sprites/S_C_Kumal_Standing" + actorFace.ToString());
+                Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Kumal_Standing" + actorFace.ToString());
                 break;
 
             case "타우루스":
-                Actor.sprite = Resources.Load<Sprite>("Sprites/S_C_Taurus_Standing" + actorFace.ToString());
+                Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Taurus_Standing" + actorFace.ToString());
                 break;
                 #endregion
         }

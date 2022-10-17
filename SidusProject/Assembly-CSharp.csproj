@@ -69,6 +69,7 @@
     <Compile Include="Assets\2.Scripts\5.Ingame\BombBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BlindImage.cs" />
     <Compile Include="Assets\2.Scripts\3.Stage\StageButton.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\ResultPanel.cs" />
     <Compile Include="Assets\2.Scripts\Managers\SaveLoadManager.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\AskButton.cs" />
     <Compile Include="Assets\2.Scripts\Locked.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
-    <Compile Include="Assets\2.Scripts\5.Ingame\ResultPanel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />

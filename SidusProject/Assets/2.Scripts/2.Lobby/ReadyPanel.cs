@@ -7,8 +7,7 @@ public class ReadyPanel : MonoBehaviour
 {
     [SerializeField] private Text ChapterTitle;
     [SerializeField] private Image CharacterImage;
-    [SerializeField] private Text LimitTime;
-    [SerializeField] private Text GoalScore;
+    [SerializeField] private Text PlaneName;
     [SerializeField] private Button PlayButton;
 
     private void OnEnable()
@@ -17,8 +16,7 @@ public class ReadyPanel : MonoBehaviour
 
         ChapterTitle.text = '<' + Data.ChapterTitle + '>';
         CharacterImage.sprite = Resources.Load<Sprite>("Sprites/" + Data.CharacterImage);
-        LimitTime.text = Data.LimitTime.ToString();
-        GoalScore.text = Data.GoalScore.ToString();
+        PlaneName.text = Data.PlaneName;
 
         switch (GameManager.Instance.CurrentChapter)
         {
@@ -40,24 +38,6 @@ public class ReadyPanel : MonoBehaviour
                 break;
 
             case GameManager.ChapterType.Virgo:
-                break;
-
-            case GameManager.ChapterType.Libra:
-                break;
-
-            case GameManager.ChapterType.Scorpio:
-                break;
-
-            case GameManager.ChapterType.Sagittarius:
-                break;
-
-            case GameManager.ChapterType.Capricorn:
-                break;
-
-            case GameManager.ChapterType.Aquarius:
-                break;
-
-            case GameManager.ChapterType.Pisces:
                 break;
         }
     }
