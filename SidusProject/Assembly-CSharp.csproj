@@ -61,6 +61,7 @@
     <Compile Include="Assets\2.Scripts\Managers\TimerManager.cs" />
     <Compile Include="Assets\2.Scripts\ButtonScript.cs" />
     <Compile Include="Assets\2.Scripts\Managers\InGameManager.cs" />
+    <Compile Include="Assets\2.Scripts\Tutorial.cs" />
     <Compile Include="Assets\2.Scripts\Managers\DataTalbeManager.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\StarCheckBox.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\Block.cs" />

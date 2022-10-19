@@ -17,9 +17,9 @@ public class DialogScript : MonoBehaviour
     [SerializeField] private Sprite[] ActorFace;
     [SerializeField] private Text ActorSpeech;
 
-    [SerializeField] private GameObject GameStartButton;
-
     [HideInInspector] public bool IsBefore;
+
+    [SerializeField] private Tutorial IngameTutorial;
 
     private bool IsSkip = false;
 
@@ -69,7 +69,7 @@ public class DialogScript : MonoBehaviour
         if (!IsBefore)
         {
             gameObject.SetActive(false);
-            GameStartButton.SetActive(true);
+            SceneManager.LoadScene("5.Ingame");
             GameManager.Instance.PlayerData.TalkOnce[(int)GameManager.Instance.CurrentChapter] = 1;
         }
         else
@@ -99,59 +99,68 @@ public class DialogScript : MonoBehaviour
 
     private IEnumerator Acting(string actorName, int actorFace, string actorSpeech)
     {
-        if (actorName == "Player")
-            ActorName.text = GameManager.Instance.PlayerData.PlayerName;
+        if(actorName == "Tutorial")
+        {
+            StartCoroutine(IngameTutorial.StartTutorial());
+        }
         else
-            ActorName.text = actorName;
-
-        switch (actorName)
         {
-            #region
-            case "捻富":
-                Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Kumal_Standing" + actorFace.ToString());
-                break;
+            if (actorName == "Player")
+                ActorName.text = GameManager.Instance.PlayerData.PlayerName;
+            else
+                ActorName.text = actorName;
 
-            case "鸥快风胶":
-                Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Taurus_Standing" + actorFace.ToString());
-                break;
-                #endregion
-        }
-
-        string[] SpeechSplit = actorSpeech.Split('_');
-        if (SpeechSplit.Length > 1)
-        {
-            actorSpeech = null;
-            for (int i = 0; i < SpeechSplit.Length; i++)
+            switch (actorName)
             {
-                if (SpeechSplit[i] == "Player")
-                    actorSpeech += GameManager.Instance.PlayerData.PlayerName;
-                else
-                    actorSpeech += SpeechSplit[i];
-            }
-        }
+                #region
+                case "捻富":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Kumal_Standing" + actorFace.ToString());
+                    break;
 
-        string writerText = "";
-        for (int i = 0; i < actorSpeech.Length; i++)
-        {
-            if (IsSkip)
-            {
-                ActorSpeech.text = actorSpeech;
-                IsSkip = false;
-                break;
+                case "鸥快风胶":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Taurus_Standing" + actorFace.ToString());
+                    break;
+
+
+                    #endregion
             }
 
-            writerText += actorSpeech[i];
-            ActorSpeech.text = writerText;
-            yield return new WaitForSeconds(0.05f);
-        }
+            string[] SpeechSplit = actorSpeech.Split('_');
+            if (SpeechSplit.Length > 1)
+            {
+                actorSpeech = null;
+                for (int i = 0; i < SpeechSplit.Length; i++)
+                {
+                    if (SpeechSplit[i] == "Player")
+                        actorSpeech += GameManager.Instance.PlayerData.PlayerName;
+                    else
+                        actorSpeech += SpeechSplit[i];
+                }
+            }
 
-        while (true)
-        {
-            if (Input.GetMouseButtonDown(0))
-                break;
-            yield return null;
-        }
+            string writerText = "";
+            for (int i = 0; i < actorSpeech.Length; i++)
+            {
+                if (IsSkip)
+                {
+                    ActorSpeech.text = actorSpeech;
+                    IsSkip = false;
+                    break;
+                }
 
-        IsSkip = false;
+                writerText += actorSpeech[i];
+                ActorSpeech.text = writerText;
+                yield return new WaitForSeconds(0.05f);
+            }
+
+            while (true)
+            {
+                if (Input.GetMouseButtonDown(0))
+                    break;
+                yield return null;
+            }
+
+            IsSkip = false;
+        }
     }
 }

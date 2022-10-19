@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 11}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 107
+  controlID: 101
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 492}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 1
-  controlID: 152
+  controlID: 89
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 62
+  controlID: 44
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,7 +254,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 492}
   m_MaxSize: {x: 22006, y: 14042}
   vertical: 0
-  controlID: 153
+  controlID: 90
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,22 +367,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Sprites/Puzzle
+    - Assets/1.Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Sprites/Puzzle
+  - Assets/1.Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\tiger\GitHubDestktop_Repository\Sidus\SidusProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 196}
-    m_SelectedIDs: bebe0000
-    m_LastClickedID: 48830
-    m_ExpandedIDs: 00000000ce4e0000d04e0000d24e0000d44e0000fe4e0000004f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ac4e0000
+    m_LastClickedID: 20140
+    m_ExpandedIDs: 000000009c4e00009e4e0000a04e0000a24e0000cc4e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -410,7 +410,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce4e0000d04e0000d24e0000d44e0000
+    m_ExpandedIDs: 000000009c4e00009e4e0000a04e0000a24e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,7 +462,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 11}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 163
@@ -531,9 +531,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30be0000
-      m_LastClickedID: 48688
-      m_ExpandedIDs: d427ffff963effff8c44ffffa444fffffa47ffff0265ffff5efbfffffe4c0000224d0000324d0000504d0000544d0000c24d0000cc4d00003ca100009ca100008cb8000014bc0000d2bd0000dcbd000012be000030be000060be0000a4be0000
+      m_SelectedIDs: 04610000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 96deffffbadfffff5efbffffce4c0000484d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -593,9 +593,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.10601793, y: -1.3224599, z: 21.919815}
+    m_Target: {x: 71.73603, y: 1339.4155, z: -1132.4332}
     speed: 2
-    m_Value: {x: -0.10601793, y: -1.3224599, z: 21.919815}
+    m_Value: {x: 71.73603, y: 1339.4155, z: -1132.4332}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -646,9 +646,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2.3030226
+    m_Target: 2426.7153
     speed: 2
-    m_Value: 2.3030226
+    m_Value: 2426.7153
   m_Ortho:
     m_Target: 1
     speed: 2
