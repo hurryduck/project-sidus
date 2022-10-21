@@ -575,7 +575,7 @@ MonoBehaviour:
     ClearStageNum: 
     TalkOnce: 000000000000000000000000
     AfterTalckOnce: 000000000000000000000000
-  CurrentChapter: 3
+  CurrentChapter: 0
   CurrentStage: 0
 --- !u!4 &216646387
 Transform:
@@ -2554,8 +2554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 525, y: 210}
+  m_AnchoredPosition: {x: -40, y: -10}
+  m_SizeDelta: {x: 600, y: 195}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1365333988
 MonoBehaviour:
@@ -2577,7 +2577,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d4582036aba0ec84bbe4f1d175b989f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3081b1c95178d874bbdac6a62ae4ea27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

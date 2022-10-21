@@ -25,20 +25,20 @@ public class DialogScript : MonoBehaviour
 
     private void Update()
     {
+        // 화면을 터치하면 출력되는 대화가 한번에 출력된다.
         if (Input.GetMouseButtonDown(0))
-        {
             IsSkip = true;
-        }
     }
 
     public IEnumerator Dialog()
     {
+        // 대화씬을 재활용하기 위해서 각 스테이지의 첫번째 대회, 클리어 후 대화를 구분하여 데이터를 받아온다.
         if (!IsBefore)
             Datas = DataTalbeManager.Instance.GetData_Dialog(GameManager.Instance.CurrentChapter, "Start");
         else
             Datas = DataTalbeManager.Instance.GetData_Dialog(GameManager.Instance.CurrentChapter, "End");
 
-
+        // 대화 선택 후 대답을 출력하기 위한 제어문이다.
         for (OderNum = 0; OderNum < Datas.Count; OderNum++)
         {
             if (Datas[OderNum].Type == DialogData.DialogTypes.Ask)
@@ -63,9 +63,9 @@ public class DialogScript : MonoBehaviour
 
             if (Datas[OderNum].Type == DialogData.DialogTypes.Answer_End)
                 SelectNum = 0;
-
         }
-
+        
+        //  대화 종료 후 실행될 코드들을 분리해 두었다.
         if (!IsBefore)
         {
             gameObject.SetActive(false);
@@ -121,7 +121,18 @@ public class DialogScript : MonoBehaviour
                     Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Taurus_Standing" + actorFace.ToString());
                     break;
 
+                case "마시타":
+                case "브바":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Gemini_Standing" + actorFace.ToString());
+                    break;
 
+                case "두브":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Dub_Standing" + actorFace.ToString());
+                    break;
+
+                case "우르굴라":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Urgula_Standing" + actorFace.ToString());
+                    break;
                     #endregion
             }
 

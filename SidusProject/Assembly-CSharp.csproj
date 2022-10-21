@@ -66,7 +66,7 @@
     <Compile Include="Assets\2.Scripts\5.Ingame\StarCheckBox.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\Block.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ScoreManager.cs" />
-    <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel.cs" />
+    <Compile Include="Assets\2.Scripts\2.Lobby\PlanetInfoPanel.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BombBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BlindImage.cs" />
     <Compile Include="Assets\2.Scripts\3.Stage\StageButton.cs" />
@@ -83,7 +83,7 @@
     <Compile Include="Assets\2.Scripts\5.Ingame\StarBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\DragnDropBomb.cs" />
     <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
-    <Compile Include="Assets\2.Scripts\2.Lobby\ReadyPanel_Data.cs" />
+    <Compile Include="Assets\2.Scripts\2.Lobby\PlanetInfo.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
   </ItemGroup>
   <ItemGroup>

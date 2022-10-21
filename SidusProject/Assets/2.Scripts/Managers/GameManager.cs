@@ -46,8 +46,6 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        PlayerData = new PlayerData();
-        SaveData();
         LoadData();
     }
 
