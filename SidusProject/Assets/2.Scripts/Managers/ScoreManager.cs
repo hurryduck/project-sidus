@@ -35,7 +35,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
-        MaxValue = ((int)GameManager.Instance.CurrentChapter + 1) * 100;
+        MaxValue = ((int)GameManager.Instance.CurrentChapter + 1) * 1000;
     }
 
     private void Update()

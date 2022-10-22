@@ -62,11 +62,12 @@ public class StarBoard : MonoBehaviour
 
         for (int i = 0; i < 4; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 2);    // Top
         for (int i = 4; i < 8; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 3);    // Right
-        if(GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
-        {
-            for (int i = 8; i < 12; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 0);   // Bottom
-            for (int i = 12; i < 16; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 1);  // Left
-        }
+
+        //if(GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
+        //{
+        //    for (int i = 8; i < 12; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 0);   // Bottom
+        //    for (int i = 12; i < 16; i++) PlaceBombBlock(BombTiles[i].ArrayPosition, i, 1);  // Left
+        //}
     }
 
     private void Update()

@@ -73,11 +73,11 @@ public class DragnDropBomb : MonoBehaviour
     public void SetBomb()
     {
         // 쌍둥이자리일 경우 배치 되는 곳이 한정되어 있음
-        int Range;
-        if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
-            Range = 16;
-        else
-            Range = 8;
+        int Range = 8;
+        //if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
+        //    Range = 16;
+        //else
+        //    Range = 8;
 
         // 만약 같은 폭탄틀을 가지고 올 경우 폭탄틀이 폭파 하면 맞는 폭탄틀이 없어지는 것을 방지하기 위해 아래 과정을 진행한다.
         if (ArrayNum != -1)

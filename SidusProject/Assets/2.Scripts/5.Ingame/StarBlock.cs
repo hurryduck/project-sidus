@@ -65,6 +65,7 @@ public class StarBlock : Block
                     if (IsClicked)
                     {
                         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_DC_1_Branch" + ((int)Shape + 1).ToString());
+                        SoundManager.Instance.PlaySFXSound("A_StarBlock");
                         starState = StarState.Moving;
                         StartCoroutine(RotationStarBlock());
                     }
@@ -74,6 +75,7 @@ public class StarBlock : Block
                 }
                 else
                 {
+                    SoundManager.Instance.PlaySFXSound("A_StarBlock");
                     starState = StarState.Moving;
                     StartCoroutine(RotationStarBlock());
                 }
@@ -130,7 +132,7 @@ public class StarBlock : Block
                 foreach (RaycastHit2D Hit in Hits)
                     if (Hit.collider != null)
                     {
-                        if(Type == Types.DoubleBomb)
+                        if (Type == Types.DoubleBomb)
                             Hit.transform.tag = "FakeLink";
                         else
                             Hit.transform.tag = "Link";

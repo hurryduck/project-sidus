@@ -56,6 +56,7 @@ public class Locked : MonoBehaviour
 
     public void _Click()
     {
+        SoundManager.Instance.PlaySFXSound("A_B_Beep");
         WarningPanel.SetActive(true);
     }
 }

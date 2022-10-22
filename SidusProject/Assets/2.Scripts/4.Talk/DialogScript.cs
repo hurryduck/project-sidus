@@ -27,7 +27,10 @@ public class DialogScript : MonoBehaviour
     {
         // 화면을 터치하면 출력되는 대화가 한번에 출력된다.
         if (Input.GetMouseButtonDown(0))
+        {
+            SoundManager.Instance.PlaySFXSound("A_B_Skip");
             IsSkip = true;
+        }
     }
 
     public IEnumerator Dialog()
@@ -102,6 +105,11 @@ public class DialogScript : MonoBehaviour
         if(actorName == "Tutorial")
         {
             StartCoroutine(IngameTutorial.StartTutorial());
+        }
+        else if(actorName == "Start")
+        {
+            SceneManager.LoadScene("5.Ingame");
+            GameManager.Instance.PlayerData.TalkOnce[(int)GameManager.Instance.CurrentChapter] = 1;
         }
         else
         {

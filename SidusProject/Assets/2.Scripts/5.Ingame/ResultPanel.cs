@@ -14,6 +14,7 @@ public class ResultPanel : MonoBehaviour
     {
         if (isclear)
         {
+            SoundManager.Instance.PlaySFXSound("A_Effect_ClearStage");
             ClearFail.sprite = Resources.Load<Sprite>("Sprites/S_W_Clear");
             RestartButton.SetActive(false);
             ExitButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 80);

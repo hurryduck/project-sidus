@@ -42,11 +42,12 @@
 1_Start_35,Answer_End,쿠말,1,요새 젊은이들은 이렇게 정이 없어서야. 사회가 이 모양이지. 비협조적이면 집에 못 돌아갈걸세.
 1_Start_36,Standard,Player,0,알겠습니다! 그럼 별자리를 돌리기 위해 전 뭘 해야 하나요?
 1_Start_37,Standard,쿠말,1,그건 내가 시도하면서 알아낸 부분과 함께 알려주겠네.
-1_Start_38,Standard,쿠말,2,아주 잘 따라와 주었네. 이제 실전일세. 잘 부탁하네.
-1_Start_39,Ask,Player,0,네!
-1_Start_40,Ask,Player,0,아직 자신 없어요.
-1_Start_41,Answer_End,쿠말,1,게임 시작
-1_Start_42,Answer_End,쿠말,2,"자네는 할 수 있네, 바로 게임을 시작하지"
+1_Start_38,Standard,Tutorial,0,null
+1_Start_39,Standard,쿠말,2,아주 잘 따라와 주었네. 이제 실전일세. 잘 부탁하네.
+1_Start_40,Ask,Player,0,네!
+1_Start_41,Ask,Player,0,아직 자신 없어요.
+1_Start_42,Answer_End,Start,0,null
+1_Start_43,Answer_End,쿠말,2,"자네는 할 수 있네, 바로 게임을 시작하지"
 1_End_1,Standard,쿠말,2,고맙네! 자네 덕분에 사람들이 무기력증에서 벗어나고 있는 것 같네.
 1_End_2,Standard,Player,0,다행이네요. 그럼 저는 이제 집으로 갈 수 있는 건가요?
 1_End_3,Standard,쿠말,1,자네가 바쁘다면 어쩔 수 없겠지만….. 우리 별자리뿐만 아니라 다른 별자리들도 상황이 좋지 않네….
