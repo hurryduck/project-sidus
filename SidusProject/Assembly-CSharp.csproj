@@ -58,14 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\2.Scripts\Managers\StartManager.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogData.cs" />
-    <Compile Include="Assets\2.Scripts\Managers\TimerManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\TimerManager.cs" />
     <Compile Include="Assets\2.Scripts\ButtonScript.cs" />
-    <Compile Include="Assets\2.Scripts\Managers\InGameManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\InGameManager.cs" />
     <Compile Include="Assets\2.Scripts\Tutorial.cs" />
     <Compile Include="Assets\2.Scripts\Managers\DataTalbeManager.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\StarCheckBox.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\Block.cs" />
-    <Compile Include="Assets\2.Scripts\Managers\ScoreManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\ScoreManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\PlanetInfoPanel.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BombBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\BlindImage.cs" />
@@ -77,12 +77,13 @@
     <Compile Include="Assets\2.Scripts\CSVReader.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\StarBoard.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\TalkSceneManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\PauseMenu.cs" />
     <Compile Include="Assets\2.Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\SkipAllButton.cs" />
     <Compile Include="Assets\2.Scripts\Fixed.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\StarBlock.cs" />
     <Compile Include="Assets\2.Scripts\5.Ingame\DragnDropBomb.cs" />
-    <Compile Include="Assets\2.Scripts\Managers\ComboManager.cs" />
+    <Compile Include="Assets\2.Scripts\5.Ingame\ComboManager.cs" />
     <Compile Include="Assets\2.Scripts\2.Lobby\PlanetInfo.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
     <Compile Include="Assets\2.Scripts\Managers\SoundManager.cs" />
