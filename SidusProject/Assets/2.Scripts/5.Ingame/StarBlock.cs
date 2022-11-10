@@ -75,7 +75,7 @@ public class StarBlock : Block
                 }
                 else
                 {
-                    SoundManager.Instance.PlaySFXSound("A_StarBlock");
+                    SoundManager.Instance.PlaySFXSound("A_StarBlock_Click");
                     starState = StarState.Moving;
                     StartCoroutine(RotationStarBlock());
                 }
@@ -109,6 +109,7 @@ public class StarBlock : Block
     private IEnumerator BomebStarBlock()
     {
         IsBomb = true;
+        SoundManager.Instance.PlaySFXSound("A_StarBlock_Bomb");
         GetComponent<SpriteRenderer>().enabled = false;
 
         ComboManager.Instance.IncreaseCombo();

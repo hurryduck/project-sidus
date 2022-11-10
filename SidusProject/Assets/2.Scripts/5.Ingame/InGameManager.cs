@@ -17,7 +17,7 @@ public class InGameManager : MonoBehaviour
     }
 
     [SerializeField] private ResultPanel ResultMenuUI;
-    [SerializeField] private Button ExitButton;
+    [SerializeField] private Button NextButton;
 
     [HideInInspector] public bool IsPaused = false;
 
@@ -41,37 +41,48 @@ public class InGameManager : MonoBehaviour
         switch (GameManager.Instance.CurrentChapter)
         {
             case GameManager.ChapterType.Aries:
-                if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 5)
+                if (GameManager.Instance.CurrentStage == 5)
                 {
-                    ExitButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                    if(GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
-                        GameManager.Instance.PlayerData.ClearChapterNum++;
+                    if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 5)
+                    {
+                        NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                            GameManager.Instance.PlayerData.ClearChapterNum++;
+                    }
                 }
                 else
-                    ExitButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter01_Stages"); });
-
+                    NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter01_Stages"); });
                 break;
+
             case GameManager.ChapterType.Taurus:
-                if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 10)
+                if (GameManager.Instance.CurrentStage == 10)
                 {
-                    ExitButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                    if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
-                        GameManager.Instance.PlayerData.ClearChapterNum++;
+                    if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 10)
+                    {
+                        NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                            GameManager.Instance.PlayerData.ClearChapterNum++;
+                    }
+
                 }
                 else
-                    ExitButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter02_Stages"); });
+                    NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter02_Stages"); });
                 break;
 
             case GameManager.ChapterType.Gemini:
+        
                 break;
 
             case GameManager.ChapterType.Cancer:
+       
                 break;
 
             case GameManager.ChapterType.Leo:
+         
                 break;
 
             case GameManager.ChapterType.Virgo:
+            
                 break;
 
         }

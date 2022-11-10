@@ -87,6 +87,7 @@
     <Compile Include="Assets\2.Scripts\2.Lobby\PlanetInfo.cs" />
     <Compile Include="Assets\2.Scripts\4.Talk\DialogScript.cs" />
     <Compile Include="Assets\2.Scripts\Managers\SoundManager.cs" />
+    <Compile Include="Assets\2.Scripts\3.Stage\StageManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\version.txt" />

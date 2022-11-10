@@ -104,6 +104,11 @@ public class ButtonScript : MonoBehaviour
             Time.timeScale = 1f;
     }
 
+    public void _PlaySFXSound(string strSoundName)
+    {
+        SoundManager.Instance.PlaySFXSound(strSoundName);
+    }
+
     public void _BgmMute()
     {
         SoundCheck = !SoundCheck;

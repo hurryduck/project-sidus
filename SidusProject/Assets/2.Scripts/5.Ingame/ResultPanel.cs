@@ -8,7 +8,7 @@ public class ResultPanel : MonoBehaviour
     [SerializeField] private Image ClearFail;
     [SerializeField] private Image[] Stars;
     [SerializeField] private GameObject RestartButton;
-    [SerializeField] private GameObject ExitButton;
+    [SerializeField] private GameObject NextButton;
 
     public void SetPanel(bool isclear)
     {
@@ -17,7 +17,7 @@ public class ResultPanel : MonoBehaviour
             SoundManager.Instance.PlaySFXSound("A_Effect_ClearStage");
             ClearFail.sprite = Resources.Load<Sprite>("Sprites/S_W_Clear");
             RestartButton.SetActive(false);
-            ExitButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 80);
+            NextButton.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 80);
 
             int ClearTime = Mathf.FloorToInt(TimerManager.Instance.CurrentTime);
             if(ClearTime >= 120)
@@ -34,10 +34,7 @@ public class ResultPanel : MonoBehaviour
             else
                 Stars[0].sprite = Resources.Load<Sprite>("Sprites/S_SmallStar_ON");
         }
-        else
-        {
 
-        }
         gameObject.SetActive(true);
     }
 }
