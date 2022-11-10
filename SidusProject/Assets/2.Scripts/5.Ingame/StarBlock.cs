@@ -18,6 +18,9 @@ public class StarBlock : Block
 
     private bool IsClicked = false;
 
+    [SerializeField] private Animator A_1_Bomb;
+    [SerializeField] private Animator A_2_Outline;
+
     protected override void Awake()
     {
         starState = StarState.Waiting;
@@ -110,15 +113,21 @@ public class StarBlock : Block
     {
         IsBomb = true;
         SoundManager.Instance.PlaySFXSound("A_StarBlock_Bomb");
-        GetComponent<SpriteRenderer>().enabled = false;
+        //GetComponent<SpriteRenderer>().enabled = false;
+
+        if(A_1_Bomb != null && A_2_Outline != null)
+        {
+            A_2_Outline.SetTrigger("Bomb");
+            A_1_Bomb.SetTrigger("Bomb");
+        }
 
         ComboManager.Instance.IncreaseCombo();
 
         Blink();
 
-        StartCoroutine(StarBoard.Instance.PlaceStarBlcok(transform, MyPosition, 0.5f));
+        StartCoroutine(StarBoard.Instance.PlaceStarBlcok(transform, MyPosition, 1));
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
         Destroy(gameObject);
     }
 

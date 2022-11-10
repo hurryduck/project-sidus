@@ -15,11 +15,11 @@ C:/Users/tiger/GitHubDesktop_Repositories/Sidus/SidusProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-4472
+7477
 Successfully changed project path to: C:/Users/tiger/GitHubDesktop_Repositories/Sidus/SidusProject
 C:/Users/tiger/GitHubDesktop_Repositories/Sidus/SidusProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.29f1 (2ff179115da0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/Resources/UnitySubsystems
@@ -35,48 +35,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.29f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001572 seconds.
+Registered in 0.001582 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.505 seconds
+- Completed reload, in  0.485 seconds
 Domain Reload Profiling:
-	ReloadAssembly (505ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (485ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (392ms)
-			LoadAssemblies (50ms)
+		EndReloadAssembly (373ms)
+			LoadAssemblies (49ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (120ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (149ms)
+			SetupLoadedEditorAssemblies (146ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
+				RefreshPlugins (42ms)
 				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (64ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
+				ProcessInitializeOnLoadAttributes (63ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002776 seconds.
+Registered in 0.002839 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 44.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 44.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.945 seconds
@@ -91,15 +91,15 @@ Domain Reload Profiling:
 		EndReloadAssembly (767ms)
 			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (256ms)
+			SetupTypeCache (258ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (291ms)
+			SetupLoadedEditorAssemblies (289ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (45ms)
-				BeforeProcessingInitializeOnLoad (73ms)
+				BeforeProcessingInitializeOnLoad (71ms)
 				ProcessInitializeOnLoadAttributes (152ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (5ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2406 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 112.6 MB.
+Unloading 2407 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.7 MB.
 System memory in use after: 111.5 MB.
 
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2827.
-Total: 3.691800 ms (FindLiveObjects: 0.217300 ms CreateObjectMapping: 0.074800 ms MarkObjects: 2.661200 ms  DeleteObjects: 0.737400 ms)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2829.
+Total: 3.879000 ms (FindLiveObjects: 0.230300 ms CreateObjectMapping: 0.070500 ms MarkObjects: 2.833600 ms  DeleteObjects: 0.743900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,65 +131,193 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/1.Scenes/1.Start.unity
-  artifactKey: Guid(26f0d51ddda3a5c4eb990f1c8416b72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1.Scenes/1.Start.unity using Guid(26f0d51ddda3a5c4eb990f1c8416b72f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8538e589f09670626d4101fc02f4bc2d') in 0.015468 seconds 
-  Import took 0.019471 seconds .
+  path: Assets/3.Sprites/StarBlock/T Block Select.png
+  artifactKey: Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/T Block Select.png using Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50976dd09f5433ba32a69052c27c4a21') in 0.078430 seconds 
+  Import took 0.081748 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003116 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
-Domain Reload Profiling:
-	ReloadAssembly (834ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (682ms)
-			LoadAssemblies (80ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (243ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (154ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2373 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 109.8 MB.
-System memory in use after: 108.7 MB.
+Received Import Request.
+  Time since last request: 13.225787 seconds.
+  path: Assets/3.Sprites/StarBlock/L Block Select.png
+  artifactKey: Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/L Block Select.png using Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e17fe875533e0a8dd5899c0d2f0126a') in 0.016633 seconds 
+  Import took 0.020139 seconds .
 
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2829.
-Total: 3.831900 ms (FindLiveObjects: 0.218300 ms CreateObjectMapping: 0.068400 ms MarkObjects: 2.746800 ms  DeleteObjects: 0.797800 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.895512 seconds.
+  path: Assets/3.Sprites/StarBlock/I Block Select.png
+  artifactKey: Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/I Block Select.png using Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567d3fcb59375ea259fa14bfca90e9ee') in 0.011581 seconds 
+  Import took 0.015200 seconds .
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3.705460 seconds.
+  path: Assets/3.Sprites/StarBlock/I Block Broken.png
+  artifactKey: Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/I Block Broken.png using Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93298658bbf962798a91fd427171cec6') in 0.026341 seconds 
+  Import took 0.029819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.781638 seconds.
+  path: Assets/3.Sprites/StarBlock/T Block Broken.png
+  artifactKey: Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/T Block Broken.png using Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1857ab71344d108afd1c80b6a7d7c456') in 0.018493 seconds 
+  Import took 0.021896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.918751 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png
+  artifactKey: Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png using Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4561eb042257480e21aefa8615dce70') in 0.015325 seconds 
+  Import took 0.019258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.159432 seconds.
+  path: Assets/3.Sprites/StarBlock/L Block Broken.png
+  artifactKey: Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/L Block Broken.png using Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ba3ec1d30bfc11fa18635bb573da05') in 0.017834 seconds 
+  Import took 0.021584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.771960 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png
+  artifactKey: Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png using Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d47742042b4cab3df2099fd61c46906') in 0.027276 seconds 
+  Import took 0.030730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.768342 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png
+  artifactKey: Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png using Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b664fefbf9186274f25136bf2e68292e') in 0.028736 seconds 
+  Import took 0.032268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.233178 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png
+  artifactKey: Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png using Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5eb61955c0d66f096afaf3d21e088c7') in 0.016843 seconds 
+  Import took 0.020269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.367824 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png
+  artifactKey: Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png using Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185af991563784e98ef0fff119b59bc2') in 0.012529 seconds 
+  Import took 0.015976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.909302 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png
+  artifactKey: Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png using Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19eb02bc8baa34470d4feb4a1f7145b') in 0.025652 seconds 
+  Import took 0.029026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.507290 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png
+  artifactKey: Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png using Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c887eb52584d1217b0f8498749c410') in 0.036637 seconds 
+  Import took 0.041051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.964510 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png
+  artifactKey: Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch1.png using Guid(8e9344d926ada6e409e0ea391f5b0027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a83001e1f41edddceea0067b90345ba') in 0.074314 seconds 
+  Import took 0.079081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.393365 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png
+  artifactKey: Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png using Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9133de59ff8661dafbbe02b136eb13a4') in 0.017804 seconds 
+  Import took 0.022050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.491189 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png
+  artifactKey: Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch2.png using Guid(50d3ec4a5c93e86418b23911bc08ea1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7f4169977d60225bbe0da7c226a8ce') in 0.052389 seconds 
+  Import took 0.056706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.283472 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png
+  artifactKey: Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png using Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe156cf0902fa13aa24c6cd16659dff3') in 0.018211 seconds 
+  Import took 0.022847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.626759 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png
+  artifactKey: Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_1_Branch3.png using Guid(d46a0830349ee874cb00df505fae9529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0adfaaebcbbccb1969573bdf1cefc34') in 0.051835 seconds 
+  Import took 0.056161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.628842 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png
+  artifactKey: Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png using Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bbf85021a268719e9d7e30c1ddbd3e') in 0.011290 seconds 
+  Import took 0.014709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.015528 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png
+  artifactKey: Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch1.png using Guid(3f39e44a013d24d44bcadeed135000fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c7a6af77137579ae94c8a0f207deef') in 0.063975 seconds 
+  Import took 0.067372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.130183 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png
+  artifactKey: Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png using Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82cda59456c78f9cdf5204ab3ae9dc7') in 0.010478 seconds 
+  Import took 0.013981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.813443 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png
+  artifactKey: Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_2_Branch2.png using Guid(3a17dd39fb5c27a4f85c5ffa1f9668b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7f295eb9ad296cbe04d162c0d68cce') in 0.059066 seconds 
+  Import took 0.062414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.912718 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png
+  artifactKey: Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png using Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890cc3f49dd6ba5e354ebcdeb810c6e0') in 0.011392 seconds 
+  Import took 0.014878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.901131 seconds.
+  path: Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png
+  artifactKey: Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Sprites/StarBlock/S_A_Bomb_3_Branch3.png using Guid(be6812b3ea27dde4282be2dc71b2ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c63560ae844f8d485ed0cf5945b7552') in 0.058384 seconds 
+  Import took 0.061955 seconds .
+
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
