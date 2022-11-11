@@ -23,7 +23,7 @@ public class TalkSceneManager : MonoBehaviour
                 break;
 
             case GameManager.ChapterType.Gemini:
-                SetTalkScene(5, "Sprites/S_P_BG_03_Gemini", "Sprites/S_CN_Gemini", "Sprites/Character/S_C_Gemini_Standing1");
+                SetTalkScene(10, "Sprites/S_P_BG_03_Gemini", "Sprites/S_CN_Gemini", "Sprites/Character/S_C_Gemini_Standing1");
                 break;
 
             case GameManager.ChapterType.Cancer:
@@ -31,11 +31,11 @@ public class TalkSceneManager : MonoBehaviour
                 break;
 
             case GameManager.ChapterType.Leo:
-                SetTalkScene(5, "Sprites/S_P_BG_05_Leo", "Sprites/S_CN_Leo", "Sprites/Character/S_C_Urgula_Standing1");
+                SetTalkScene(9, "Sprites/S_P_BG_05_Leo", "Sprites/S_CN_Leo", "Sprites/Character/S_C_Urgula_Standing1");
                 break;
 
             case GameManager.ChapterType.Virgo:
-                SetTalkScene(5, "Sprites/S_P_BG_06_Virgo", "Sprites/S_CN_Virgo", "Sprites/Character/S_C_Kumal_Standing1");
+                SetTalkScene(10, "Sprites/S_P_BG_06_Virgo", "Sprites/S_CN_Virgo", "Sprites/Character/S_C_Ave_Standing1");
                 break;
         }
 

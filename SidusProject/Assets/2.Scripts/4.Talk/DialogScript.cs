@@ -141,6 +141,10 @@ public class DialogScript : MonoBehaviour
                 case "우르굴라":
                     Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Urgula_Standing" + actorFace.ToString());
                     break;
+
+                case "아브":
+                    Actor.sprite = Resources.Load<Sprite>("Sprites/Character/S_C_Ave_Standing" + actorFace.ToString());
+                    break;
                     #endregion
             }
 
