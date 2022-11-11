@@ -46,7 +46,7 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 5)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
                 }
@@ -60,10 +60,9 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 10)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
-
                 }
                 else
                     NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter02_Stages"); });
@@ -75,10 +74,9 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 10)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
-
                 }
                 else
                     NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter03_Stages"); });
@@ -90,10 +88,9 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 5)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
-
                 }
                 else
                     NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter04_Stages"); });
@@ -105,10 +102,9 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 9)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
-
                 }
                 else
                     NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter05_Stages"); });
@@ -120,10 +116,9 @@ public class InGameManager : MonoBehaviour
                     if (GameManager.Instance.PlayerData.ClearStageNum[(int)GameManager.Instance.CurrentChapter] == 10)
                     {
                         NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("4.Talk"); });
-                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter)
+                        if (GameManager.Instance.PlayerData.ClearChapterNum < (int)GameManager.Instance.CurrentChapter + 1)
                             GameManager.Instance.PlayerData.ClearChapterNum++;
                     }
-
                 }
                 else
                     NextButton.onClick.AddListener(delegate { ButtonScript._LoadSceneName("3.Chapter06_Stages"); });
