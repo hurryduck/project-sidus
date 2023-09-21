@@ -19,19 +19,19 @@ public class GameManager : MonoBehaviour
 
     public enum ChapterType
     {
-        #region ½ºÅ×ÀÌÁö ÀÌ¸§
-        Aries = 0,          // ¾çÀÚ¸®
-        Taurus = 1,         // È²¼ÒÀÚ¸®
-        Gemini = 2,         // ½ÖµÕÀÌÀÚ¸®
-        Cancer = 3,         // °ÔÀÚ¸®
-        Leo = 4,            // »çÀÚÀÚ¸®
-        Virgo = 5,          // Ã³³àÀÚ¸®
-        Libra = 6,          // ÃµÄªÀÚ¸®
-        Scorpio = 7,        // Àü°¥ÀÚ¸®
-        Sagittarius = 8,    // ±Ã¼öÀÚ¸®
-        Capricorn = 9,      // ¿°¼ÒÀÚ¸®
-        Aquarius = 10,       // ¹°º´ÀÚ¸®
-        Pisces = 11,         // ¹°°í±âÀÚ¸®
+        #region ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½
+        Aries = 0,          // ï¿½ï¿½ï¿½Ú¸ï¿½
+        Taurus = 1,         // È²ï¿½ï¿½ï¿½Ú¸ï¿½
+        Gemini = 2,         // ï¿½Öµï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
+        Cancer = 3,         // ï¿½ï¿½ï¿½Ú¸ï¿½
+        Leo = 4,            // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
+        Virgo = 5,          // Ã³ï¿½ï¿½ï¿½Ú¸ï¿½
+        Libra = 6,          // ÃµÄªï¿½Ú¸ï¿½
+        Scorpio = 7,        // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
+        Sagittarius = 8,    // ï¿½Ã¼ï¿½ï¿½Ú¸ï¿½
+        Capricorn = 9,      // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
+        Aquarius = 10,       // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
+        Pisces = 11,         // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½
         #endregion
     }
     public ChapterType CurrentChapter;
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveData()
     {
-        // Áö±İ±îÁöÀÇ º¯°æ»çÇ×À» ÀúÀåÇÑ´Ù.
+        // ï¿½ï¿½ï¿½İ±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
         SaveLoadManager.DataSave(PlayerData, "Data");
     }
 
@@ -81,7 +81,7 @@ public class PlayerData
 
     public PlayerData()
     {
-        PlayerName = "¾Æ¹«°³";
+        PlayerName = "ì£¼ì¸ê³µ";
         ClearChapterNum = 0;
         ClearStageNum = new int[12] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         TalkOnce = new int[12] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
