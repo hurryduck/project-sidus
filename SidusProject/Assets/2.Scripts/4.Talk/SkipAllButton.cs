@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SkipAllButton : MonoBehaviour
 {
@@ -36,6 +37,6 @@ public class SkipAllButton : MonoBehaviour
     {
         gameObject.SetActive(false);
         Dialog.SetActive(false);
-        GameStartButton.SetActive(true);
+        SceneManager.LoadScene("5.Ingame");
     }
 }

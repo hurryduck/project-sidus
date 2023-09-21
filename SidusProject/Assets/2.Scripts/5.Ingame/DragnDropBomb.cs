@@ -23,7 +23,7 @@ public class DragnDropBomb : MonoBehaviour
     private int ArrayNum = -1;
     private int RandomNum;
 
-    private enum Shapes { Branch3, Branch2, Branch1 }
+    private enum Shapes { Branch1, Branch2, Branch3 }
     private Shapes Shape;
     public bool[] Branchs = new bool[4];
 
@@ -34,7 +34,7 @@ public class DragnDropBomb : MonoBehaviour
         {
             #region 생략
             case Shapes.Branch1:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch1");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch1");
                 Branchs[0] = true;   // Top
                 Branchs[1] = false;  // Right
                 Branchs[2] = true;   // Bottom
@@ -42,7 +42,7 @@ public class DragnDropBomb : MonoBehaviour
                 break;
 
             case Shapes.Branch2:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch2");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch2");
                 Branchs[0] = true;
                 Branchs[1] = true;
                 Branchs[2] = false;
@@ -50,7 +50,7 @@ public class DragnDropBomb : MonoBehaviour
                 break;
 
             case Shapes.Branch3:
-                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_Bomb_Branch3");
+                BombSprite.sprite = Resources.Load<Sprite>("Sprites/S_StarBlock_Branch3");
                 Branchs[0] = true;
                 Branchs[1] = true;
                 Branchs[2] = false;
@@ -73,11 +73,11 @@ public class DragnDropBomb : MonoBehaviour
     public void SetBomb()
     {
         // 쌍둥이자리일 경우 배치 되는 곳이 한정되어 있음
-        int Range;
-        if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
-            Range = 8;
-        else
-            Range = 16;
+        int Range = 8;
+        //if (GameManager.Instance.CurrentChapter == GameManager.ChapterType.Gemini)
+        //    Range = 16;
+        //else
+        //    Range = 8;
 
         // 만약 같은 폭탄틀을 가지고 올 경우 폭탄틀이 폭파 하면 맞는 폭탄틀이 없어지는 것을 방지하기 위해 아래 과정을 진행한다.
         if (ArrayNum != -1)
@@ -133,24 +133,13 @@ public class DragnDropBomb : MonoBehaviour
         if (collision != null)
         {
             BombBlock bombBlock = collision.transform.GetComponent<BombBlock>();
-            if (Shape == Shapes.Branch1)
+            if (bombBlock.GetBranchs[0] == Branchs[0]
+                && bombBlock.GetBranchs[1] == Branchs[1]
+                && bombBlock.GetBranchs[2] == Branchs[2]
+                && bombBlock.GetBranchs[3] == Branchs[3])
             {
-                if (bombBlock.GetBranchs[0] == Branchs[0] 
-                    && bombBlock.GetBranchs[1] == Branchs[1]
-                    && bombBlock.GetBranchs[2] == Branchs[2]
-                    && bombBlock.GetBranchs[3] == Branchs[3])
-                {
-                    bombBlock.Bomb();
-                    SetBomb();
-                }
-            }
-            else
-            {
-                if (bombBlock.RandomNum == RandomNum)
-                {
-                    bombBlock.Bomb();
-                    SetBomb();
-                }
+                bombBlock.Bomb();
+                SetBomb();
             }
         }
 

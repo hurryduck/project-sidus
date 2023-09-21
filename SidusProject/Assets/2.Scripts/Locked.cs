@@ -11,6 +11,8 @@ public class Locked : MonoBehaviour
     public enum CompareTarget { Chapter, Stage }
     [SerializeField] private CompareTarget compareTarget;
 
+    [SerializeField] public GameObject WarningPanel;
+
     void Start()
     {
         switch (compareTarget)
@@ -19,12 +21,15 @@ public class Locked : MonoBehaviour
                 // 잠금해제
                 if (MyValue <= GameManager.Instance.PlayerData.ClearChapterNum + 1)
                 {
+                    GetComponent<Image>().raycastTarget = false;
                     gameObject.SetActive(false);
                 }
                 // 잠금
                 else
                 {
                     ParentButton.raycastTarget = false;
+                    GetComponent<Image>().raycastTarget = true;
+                    ParentButton.GetComponent<Image>().color = new Color32(100, 100, 100, 255);
                 }
                 break;
 
@@ -47,5 +52,11 @@ public class Locked : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void _Click()
+    {
+        SoundManager.Instance.PlaySFXSound("A_B_Beep");
+        WarningPanel.SetActive(true);
     }
 }

@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/1.Scenes/3.Chapter02_Stages.unity
     guid: 867a3b77fe571f047872cbc3d677ec58
   - enabled: 1
+    path: Assets/1.Scenes/3.Chapter03_Stages.unity
+    guid: 9275ae0aff34c2948b4a4a0936f1b107
+  - enabled: 1
+    path: Assets/1.Scenes/3.Chapter04_Stages.unity
+    guid: e1367f1c26a996b489d848949f0cc39f
+  - enabled: 1
+    path: Assets/1.Scenes/3.Chapter05_Stages.unity
+    guid: 64190160f6cdc474db74fd99137e3fd0
+  - enabled: 1
+    path: Assets/1.Scenes/3.Chapter06_Stages.unity
+    guid: 88c08ecf1c23a2042977b2e092fc916b
+  - enabled: 1
     path: Assets/1.Scenes/4.Talk.unity
     guid: 0fcda35c2a4296246b915d31ba8b3862
   - enabled: 1

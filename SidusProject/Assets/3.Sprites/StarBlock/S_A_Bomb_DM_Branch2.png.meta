@@ -1,0 +1,525 @@
+fileFormatVersion: 2
+guid: 3be7c6be6ac1edd4d97d9982aecaeb19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7665262864140680385
+    second: S_A_Bomb_DB_Branch2_0
+  - first:
+      213: 6959263841853578617
+    second: S_A_Bomb_DB_Branch2_1
+  - first:
+      213: 900028019643566982
+    second: S_A_Bomb_DB_Branch2_2
+  - first:
+      213: 5223309792197086163
+    second: S_A_Bomb_DB_Branch2_3
+  - first:
+      213: 912238490783549155
+    second: S_A_Bomb_DB_Branch2_4
+  - first:
+      213: 1361318243679202558
+    second: S_A_Bomb_DB_Branch2_5
+  - first:
+      213: 195598543970211564
+    second: S_A_Bomb_DB_Branch2_6
+  - first:
+      213: 1388250621150991615
+    second: S_A_Bomb_DB_Branch2_7
+  - first:
+      213: -8515410100668888633
+    second: S_A_Bomb_DB_Branch2_8
+  - first:
+      213: 3997242088335325042
+    second: S_A_Bomb_DB_Branch2_9
+  - first:
+      213: 612506533565667860
+    second: S_A_Bomb_DB_Branch2_10
+  - first:
+      213: 243112155764396706
+    second: S_A_Bomb_DB_Branch2_11
+  - first:
+      213: 8363207280857147072
+    second: S_A_Bomb_DB_Branch2_12
+  - first:
+      213: -350171949739791072
+    second: S_A_Bomb_DB_Branch2_13
+  - first:
+      213: -2111613705849264888
+    second: S_A_Bomb_DB_Branch2_14
+  - first:
+      213: -1662526086871963665
+    second: S_A_Bomb_DM_Branch2_0
+  - first:
+      213: -2907030277220553378
+    second: S_A_Bomb_DM_Branch2_1
+  - first:
+      213: 414181316550985684
+    second: S_A_Bomb_DM_Branch2_2
+  - first:
+      213: 4041041564045058541
+    second: S_A_Bomb_DM_Branch2_3
+  - first:
+      213: 1553466423263735423
+    second: S_A_Bomb_DM_Branch2_4
+  - first:
+      213: -2625066014501808580
+    second: S_A_Bomb_DM_Branch2_5
+  - first:
+      213: -2774271990865005403
+    second: S_A_Bomb_DM_Branch2_6
+  - first:
+      213: 5823755555558562585
+    second: S_A_Bomb_DM_Branch2_7
+  - first:
+      213: 2129407842395971032
+    second: S_A_Bomb_DM_Branch2_8
+  - first:
+      213: 6246034290328271920
+    second: S_A_Bomb_DM_Branch2_9
+  - first:
+      213: 6396838469048761842
+    second: S_A_Bomb_DM_Branch2_10
+  - first:
+      213: 4875551429036537017
+    second: S_A_Bomb_DM_Branch2_11
+  - first:
+      213: 3504870975277312998
+    second: S_A_Bomb_DM_Branch2_12
+  - first:
+      213: 6932487221367314459
+    second: S_A_Bomb_DM_Branch2_13
+  - first:
+      213: -4083576982777721955
+    second: S_A_Bomb_DM_Branch2_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe72d2a15558de8e0800000000000000
+      internalID: -1662526086871963665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5da6fe6d5728a7d0800000000000000
+      internalID: -2907030277220553378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d700a586b77fb500800000000000000
+      internalID: 414181316550985684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1ae7364e9a41830800000000000000
+      internalID: 4041041564045058541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ea1293b750f8510800000000000000
+      internalID: 1553466423263735423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c365ba53e54e19bd0800000000000000
+      internalID: -2625066014501808580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4fc22b25ecf79d0800000000000000
+      internalID: -2774271990865005403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_7
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b96cb72d222d050800000000000000
+      internalID: 5823755555558562585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd51fb862d2d8d10800000000000000
+      internalID: 2129407842395971032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03cfce9181f5ea650800000000000000
+      internalID: 6246034290328271920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd743912b226c850800000000000000
+      internalID: 6396838469048761842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_11
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 600
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4fed3613079a340800000000000000
+      internalID: 4875551429036537017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb2bf8159dc3a030800000000000000
+      internalID: 3504870975277312998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18988fd564253060800000000000000
+      internalID: 6932487221367314459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_A_Bomb_DM_Branch2_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b8290be583457c0800000000000000
+      internalID: -4083576982777721955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

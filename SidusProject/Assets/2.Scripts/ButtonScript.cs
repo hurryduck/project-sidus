@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
-    [SerializeField]
-    private  GameObject[] SetActiveTrueObjs;
-    [SerializeField]
-    private  GameObject[] SetActiveFalseObjs;
+    [SerializeField] private GameObject[] SetActiveTrueObjs;
+    [SerializeField] private GameObject[] SetActiveFalseObjs;
+
+    private bool SoundCheck = true;
 
     public void _SaveName()
     {
@@ -102,5 +102,26 @@ public class ButtonScript : MonoBehaviour
             Time.timeScale = 0f;
         else
             Time.timeScale = 1f;
+    }
+
+    public void _PlaySFXSound(string strSoundName)
+    {
+        SoundManager.Instance.PlaySFXSound(strSoundName);
+    }
+
+    public void _BgmMute()
+    {
+        SoundCheck = !SoundCheck;
+        foreach (GameObject Obj in SetActiveTrueObjs)
+            Obj.SetActive(SoundCheck);
+        SoundManager.Instance.SetBGMMute(!SoundCheck);
+    }
+
+    public void _SfxMute()
+    {
+        SoundCheck = !SoundCheck;
+        foreach (GameObject Obj in SetActiveTrueObjs)
+            Obj.SetActive(SoundCheck);
+        SoundManager.Instance.SetSFXMute(!SoundCheck);
     }
 }

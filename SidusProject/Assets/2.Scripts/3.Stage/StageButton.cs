@@ -29,7 +29,7 @@ public class StageButton : MonoBehaviour
                 break;
 
             case StageButtonState.Clear:
-                sprite.sprite = Resources.Load<Sprite>("Sprites/S_UI_Stage_2");
+                Instantiate(Resources.Load("Prefabs/P_StarBlink"), transform);
                 break;
 
             case StageButtonState.Cleared:

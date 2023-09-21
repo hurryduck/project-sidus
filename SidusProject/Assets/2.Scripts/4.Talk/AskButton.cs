@@ -15,7 +15,7 @@ public class AskButton : MonoBehaviour
         gameObject.SetActive(Isture);
         this.Parent = Parent;
 
-        Speech.text = MyNum.ToString() + ". " + Parent.Datas[Parent.OderNum + MyNum - 1].Speech;
+        Speech.text = Parent.Datas[Parent.OderNum + MyNum - 1].Speech;
     }
 
     public void _Click()

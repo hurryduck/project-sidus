@@ -15,8 +15,8 @@ public class DataTalbeManager : MonoBehaviour
         }
     }
 
-    private ReadyPanel_Data[] ReadyPanel_Datas;
-    public ReadyPanel_Data GetData_ReadyPanel(int ChapterNum)
+    private PlanetInfo[] ReadyPanel_Datas;
+    public PlanetInfo GetData_ReadyPanel(int ChapterNum)
     {
         return ReadyPanel_Datas[ChapterNum];
     }
@@ -46,16 +46,16 @@ public class DataTalbeManager : MonoBehaviour
     private void LoadData_ReadyPanel()
     {
         // 준비창 데이터 불러오기
-        List<Dictionary<string, object>> LoadData = CSVReader.Read("ReadyPanelDataTable");
-        ReadyPanel_Datas = new ReadyPanel_Data[LoadData.Count];
+        List<Dictionary<string, object>> LoadData = CSVReader.Read("DT_PlanetInfo");
+        ReadyPanel_Datas = new PlanetInfo[LoadData.Count];
 
         for (int i = 0; i < LoadData.Count; i++)
         {
-            ReadyPanel_Data newData = new ReadyPanel_Data();
+            PlanetInfo newData = new PlanetInfo();
+            newData.StageNum = int.Parse(LoadData[i]["StageNum"].ToString());
             newData.ChapterTitle = LoadData[i]["ChapterTitle"].ToString();
             newData.CharacterImage = LoadData[i]["CharacterImage"].ToString();
-            newData.LimitTime = int.Parse(LoadData[i]["LimitTime"].ToString());
-            newData.GoalScore = int.Parse(LoadData[i]["GoalScore"].ToString());
+            newData.PlaneName = LoadData[i]["PlaneName"].ToString();
 
             ReadyPanel_Datas[i] = newData;
         }
@@ -64,7 +64,7 @@ public class DataTalbeManager : MonoBehaviour
 
     private void LoadData_Dialog()
     {
-        List<Dictionary<string, object>> LoadData = CSVReader.Read("DialogDataTable");
+        List<Dictionary<string, object>> LoadData = CSVReader.Read("DT_Dialog");
         Dialog_Datas = new DialogData[LoadData.Count];
 
         for (int i = 0; i < LoadData.Count; i++)
